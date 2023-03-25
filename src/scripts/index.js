@@ -25,10 +25,11 @@ hamburger.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const restoListEl = document.querySelector(".resto-list");
   const datas = resto.restaurants;
+  let index = 6;
   datas.map(
-    (data) =>
+    (data) => (
       (restoListEl.innerHTML += `
-          <div class="resto-item">
+          <div class="resto-item" tabindex="${index}">
             <div class="card">
               <img
                 src="${data.pictureId}"
@@ -45,7 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="resto-place">${data.city}</div>
             </div>
           </div>
-    `)
+      `),
+      index++
+    )
   );
 });
 
