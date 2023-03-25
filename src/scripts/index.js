@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 class="resto-thumb"
               />
               <div class="card-text">
+                <h1 class="card-title">${data.name}</h1>
                 <div class="resto-rate">
                   Rating: <span class="rate">${data.rating}</span>
                 </div>

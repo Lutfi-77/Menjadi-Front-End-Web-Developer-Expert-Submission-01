@@ -125,7 +125,7 @@ nav {
 
 .resto-list {
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto auto auto;
   column-gap: 20px;
   row-gap: 20px;
@@ -144,6 +144,10 @@ nav {
 
 .card-text {
   padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
 }
 
 .resto-rate {
@@ -195,6 +199,12 @@ footer {
   }
 
   .card-text {
-    padding: 40px;
+    padding: 10px 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .resto-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
