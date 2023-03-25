@@ -17,6 +17,20 @@ a {
   padding: 0 20px;
 }
 
+.to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  z-index: 100;
+}
+
+.to-content:focus {
+  top: 0;
+}
+
 img {
   display: block;
 }
@@ -50,8 +64,8 @@ nav {
   flex-direction: column;
   gap: 30px;
   position: absolute;
-  right: -30%;
-  top: 38px;
+  right: -40%;
+  top: 50px;
   background-color: black;
   padding: 20px;
   transition: 0.5s ease-in-out;
@@ -67,6 +81,8 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
 }
 
 .nav-item-open {
@@ -176,7 +192,13 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
+  .resto-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 800px) {
   .nav-item {
     flex-direction: row;
     background-color: transparent;
@@ -199,12 +221,6 @@ footer {
   }
 
   .card-text {
-    padding: 10px 40px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .resto-list {
-    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 25px;
   }
 }

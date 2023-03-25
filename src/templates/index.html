@@ -6,32 +6,33 @@
     <title>Restaurant Apps Starter Project</title>
   </head>
   <body>
+    <a href="#maincontent" class="to-content">Menuju ke konten</a>
     <header>
       <nav id="nav">
         <div class="navbar">
           <div class="nav-brand">logo</div>
           <div class="nav-item">
-            <a href="" class="nav-link">Home</a>
+            <a href="#landing" class="nav-link">Home</a>
             <a href="" class="nav-link">Favorite</a>
             <a href="https://github.com/Lutfi-77" class="nav-link">About Us</a>
           </div>
-          <div class="hamburger">
+          <button class="hamburger" tabindex="1">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-          </div>
+          </button>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="landing">
         <div class="hero-text">
           We Recommend The Best <br />
           Place To Eat
         </div>
       </section>
 
-      <section class="restaurant-section">
+      <section class="restaurant-section" id="maincontent">
         <h1 class="section-title">Explore Restaurant</h1>
         <div class="resto-list"></div>
       </section>
